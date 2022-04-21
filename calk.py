@@ -6,7 +6,7 @@ def sum():
     s2 = int(ent2.get())
     s3 = s1 + s2
     l['text'] = s3
-
+# comment
 root = tk.Tk()
 ent1 = tk.Entry(width=20)
 ent2 = tk.Entry(width=20)
