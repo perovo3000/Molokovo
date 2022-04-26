@@ -16,6 +16,6 @@ b['command'] = sum
 ent1.pack()
 ent2.pack()
 l.pack()
-
+#rjvvtyn
 b.pack()
 root.mainloop()
