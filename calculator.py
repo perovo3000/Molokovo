@@ -6,6 +6,7 @@ def get_data():
     s1 = int(ent1.get())
     s.append(s1)
     s2 = int(ent2.get())
+
     s.append(s2)
     return s
 
