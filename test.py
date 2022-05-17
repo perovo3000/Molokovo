@@ -10,11 +10,12 @@ def tick():
     x += dx
     y += dy
     print('x= ', x, "   y= ", y)
+    # опрееление направления шага по осям
     if x - R <= 0 or x + R > WIDTH:
         dx = -dx
     if y - R <= 0 or y + R > HEIGHT:
         dy = -dy
-    canvas.move(ball, dx, dy)
+    canvas.move(ball, dx, dy)  # добавление шага dx.dy, к начальной(внутренней) координате
     root.after(20, tick)
 
 
@@ -25,7 +26,7 @@ def main():
     root.title('Boll')
     root.geometry(str(WIDTH) + "x" + str(HEIGHT))
     canvas = tk.Canvas(root)
-    canvas.pack(anchor='center')
+    canvas.place(width=600,height=400)
     R = randint(30, 40)
     x = randint(R, WIDTH - R)
     y = randint(R, HEIGHT - R)
