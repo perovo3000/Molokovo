@@ -27,27 +27,44 @@ class Ball():
         if self.y - self.R <= 0 or self.y + self.R > HEIGHT:
             self.dy = -self.dy
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     def show_ball(self):
         canvas.move(self.ball_create, self.dx, self.dy)
         # добавление шага dx.dy, к начальной(внутренней) координате
 
 
 def tick():
+<<<<<<< HEAD
     for ball in balls:
         ball.move_ball()
         ball.show_ball()
+=======
+    ball.move_ball()
+    ball.show_ball()
+>>>>>>> origin/master
     root.after(20, tick)
 
 
 def main():
+<<<<<<< HEAD
     global canvas, root, balls
+=======
+    global canvas, root, ball
+>>>>>>> origin/master
 
     root = tk.Tk()
     root.title('Ball')
     root.geometry(str(WIDTH) + "x" + str(HEIGHT))
     canvas = tk.Canvas(root)
     canvas.place(width=600, height=400)
+<<<<<<< HEAD
     balls = [Ball() for i in range(5)]
+=======
+    ball = Ball()
+>>>>>>> origin/master
     tick()
     root.mainloop()
 
