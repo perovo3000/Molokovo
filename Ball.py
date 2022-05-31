@@ -6,10 +6,16 @@ WIDTH = 600
 
 
 def tick():
-    ball()
-    # x += 1
-    # y += 1
-    # canvas.move(ball)
+    global x, y, r, ball, canvas
+    dx = 1
+    dy = 1
+    x += dx
+    y += dy
+    if x - r <= 0 or x + r > WIDTH:
+        dx = -dx
+    if y - r <= 0 or y + r > HEIGHT:
+        dy = -dy
+    canvas.move(ball, dx, dy)
     root.after(50, tick)
 
 
