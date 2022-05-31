@@ -48,8 +48,7 @@ def main():
     root.geometry(str(WIDTH) + "x" + str(HEIGHT))
     canvas = tk.Canvas(root)
     canvas.place(width=600, height=400)
-    balls = [Ball() for i in range(5)]
-    ball = Ball()
+    balls = [Ball() for i in range(4)]
     tick()
     root.mainloop()
 
