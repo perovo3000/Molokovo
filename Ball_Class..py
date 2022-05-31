@@ -36,8 +36,6 @@ def tick():
     for ball in balls:
         ball.move_ball()
         ball.show_ball()
-    ball.move_ball()
-    ball.show_ball()
     root.after(20, tick)
 
 

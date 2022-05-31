@@ -14,20 +14,19 @@ def tick():
 
 
 def main():
-    global root, canvas
-    global ball_id, x, y, z
+    global root, canvas, ball
+    global ball_id, x, y, z, r
     root = tk.Tk()
-    root.geometry(str("HEIGHT") + 'x' + str('WIDTH'))
+    root.geometry(str(WIDTH) + 'x' + str(HEIGHT))
     canvas = tk.Canvas(root)
-    canvas.pack(anchor='nw', fill=tk.BOTH)
-
+    canvas.place(width=600, height=400)
     r = randint(20, 50)
     x = randint(r, WIDTH - r)
     y = randint(r, HEIGHT - r)
-    ball = canvas.create_oval(x - r, y - r, x + r, x + r, fill='green')
+    ball = canvas.create_oval(x - r, y - r, x + r, y + r, fill='green')
     tick()
     root.mainloop()
 
 
-if __name__ == '__main':
+if __name__ == "__main__":
     main()
