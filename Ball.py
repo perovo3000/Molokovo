@@ -1,6 +1,7 @@
 import tkinter as tk
 from random import randint
 
+
 HEIGHT = 400
 WIDTH = 600
 
