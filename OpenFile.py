@@ -1,9 +1,9 @@
 import pickle
 
 poem = '''\
-        jfgjdbb
-        dfhbnbn
-        dfd'''
+        запись простого
+        текстового файлв
+        !!!'''
 # открываем файл для ЗАПИСИ
 f = open('poem.txt', 'w+')
 f.write(poem)
