@@ -2,8 +2,8 @@ import tkinter as tk
 
 dat = []
 
-
 def get_data():
+    # метод для олучение данных из вводимых полей в ввиде списка
     dat = []
     d = int(ent1.get())
     dat.append(d)
@@ -11,20 +11,17 @@ def get_data():
     dat.append(d2)
     return dat
 
-
 def plus():
+    # метод для сложения данных из полученного списка
     k = get_data()
     sum = k[0] + k[1]
     lbl1['text'] = sum
 
-
 def minus():
     pass
 
-
 def mult():
     pass
-
 
 def div():
     pass
